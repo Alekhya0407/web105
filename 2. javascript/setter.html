@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Getters and Setters</h2>
+
+
+<p id="demo"></p>
+
+<script>
+
+var person = {
+  firstName: "j",
+  lastName : "D",
+  language : "NO",
+  set lang(value) {
+    this.language = value;
+  }
+};
+person.lang = "en";
+document.getElementById("demo").innerHTML = person.language;
+</script>
+
+</body>
+</html>

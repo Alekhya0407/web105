@@ -1,0 +1,38 @@
+<p>Difference between call() and apply() method: The only difference is call() method takes the arguments separated by comma while apply() method takes the array of arguments. </p>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p id="d"></p>
+
+<script>
+var person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var p1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+var x = person.fullName.call(p1); 
+document.getElementById("d").innerHTML = x; 
+
+var person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person1 = {
+  firstName:"ali",
+  lastName: "tt"
+}
+var x = person.fullName.apply(person1); 
+document.getElementById("demo").innerHTML = x; 
+</script>
+</body>
+</html>
+
+

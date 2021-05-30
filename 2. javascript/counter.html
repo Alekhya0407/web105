@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>when button click then the count will increment</title>
+</head>
+  
+<body style="text-align: center;">
+    <h1 style="color: green;">
+        JavaScript
+    </h1>
+  
+    <button id="btn">Count button</button>
+  
+    <p>
+        Button Clicked <span 
+        id="display">0</span> Times
+    </p>
+  
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
+    </script>
+</body>
+  
+</html>
