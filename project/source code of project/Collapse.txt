@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">    
+
+    <title>Collapse</title>
+    <link href="/bundles/styles?v=lPGPuSt_xKxNmptTCKJ8QNFrLXCkhCS7B-5FH-7RYpA1" rel="stylesheet"/>
+
+    <script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <script src="/bundles/jquery?v=FVs3ACwOLIVInrAl5sdzR2jrCDmVOWFbZMY6g6Q0ulE1"></script>
+
+    <script src="/bundles/jqueryval?v=hEGG8cMxk9p0ncdRUOJ-CnKN7NezhnPnWIvn6REucZo1"></script>
+
+    <script src="/bundles/scripts?v=Yu9M3GofQldw8GCZUQszP8Pma72zUfxzKX2o0ZxtV6s1"></script>
+
+    
+    
+</head>
+<body class="skin-blue sidebar-mini hold-transition">
+    <!-- Loading START -->
+    <div id="divLoader" class="loader" style="z-index: 9999; display: none;">
+        <img style="display: block; margin: auto" alt="progress" src="/Content/img/ajax-loader.gif">
+    </div>
+    <div style="display:none; z-index:9999;" id="ProgressBar" class="loader">        
+            <img src="/Content/img/ajax-loader.gif" style="display:block;margin:auto;">        
+    </div>
+    <!-- Loading END -->
+    <div class="wrapper">
+        <header class="main-header">
+    <!-- Logo -->
+    <a href="javascript:void(0);" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>Magnus</b></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg font_20"><b>Magnus</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown user user-menu">
+                    <a href="/Account/SignOut" class="dropdown-toggle p-22">
+                        <i class="fa fa-sign-out"></i>
+                        <span class="hidden_xs">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+        <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="/Content/img/user-profile.png" class="img-circle" alt="User Image" style="border:1px solid #515865">
+            </div>
+            <div class="pull-left info">
+                <p>Guest User</p>
+                <p class="font-weight-400">
+                    <i class="fa fa-user-secret m-r-xs"></i>
+                    <small style="font-weight:400">User</small>
+                </p>
+            </div>
+        </div>
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu tree leftsidemenu" id="MenusDashboard" data-widget="tree" style="display:block;">
+            <li>
+                <a href="/Home/Index"><i class="fa fa-dashboard"></i> Home </a>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i> Employee
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/Employee/Create"><i class="fa fa-pencil-square-o"></i> Create </a>
+                    </li>
+                    <li>
+                        <a href="/Employee/Search"><i class="fa fa-search"></i> Search </a>
+                    </li>
+                </ul>
+            </li>
+
+            
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-th-list"></i> More
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/Home/Tabs"><i class="fa fa-hand-o-right"></i> Multiple Tabs</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Menu"><i class="fa fa-hand-o-right"></i> Menu</a>
+                    </li>
+                    <li>
+                        <a href="/Home/AutoComplete"><i class="fa fa-hand-o-right"></i> Autocomplete</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Collapse"><i class="fa fa-hand-o-right"></i> Collapsible Content</a>
+                    </li>
+                    <li>
+                        <a href="/Home/UploadImage"><i class="fa fa-hand-o-right"></i> Images</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Slider"><i class="fa fa-hand-o-right"></i> Slider</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Tooltip"><i class="fa fa-hand-o-right"></i> Tooltips</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Popup"><i class="fa fa-hand-o-right"></i> Popups</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Links"><i class="fa fa-hand-o-right"></i> Links</a>
+                    </li>
+                    <li>
+                        <a href="/Home/CssProperty"><i class="fa fa-hand-o-right"></i> CSS Properties</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Iframe"><i class="fa fa-hand-o-right"></i> iFrames</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-cogs"></i> Settings
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/User/ChangePassword/43600880-d842-4f82-bba3-4502de19f0d5"><i class="fa fa-key"></i> Change Password </a>
+                    </li>                    
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+        <div class="content-wrapper">
+            
+
+
+
+<style type="text/css">
+    /*******************************
+    * Does not work properly if "in" is added after "collapse".
+    * Get free snippets on bootpen.com
+    *******************************/
+    .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #fff;
+        background-color: #FAFAFA;
+        border-color: #EEEEEE;
+    }
+
+    .panel-title {
+        font-size: 14px;
+        background-color: #3c8dbc;
+    }
+
+        .panel-title > a {
+             color: #fff !important;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .panel-title > a:hover {
+            color: #fff !important;
+        }
+
+    .more-less {
+        float: right;
+        color: #212121;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE;
+    }
+
+    .demo {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+</style>
+
+<section class="content-header">
+    <h1>
+        Collapsible Content
+    </h1>
+    <ol class="breadcrumb m-r-xs">
+        <li><a href="/Home/Index"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="">More</li>
+        <li class="active">Collapsible Content</li>
+    </ol>
+</section>
+
+<section class="content">
+    <form class="frmCollapse" id="frmCollapse" name="frmCollapse" enctype="multipart/form-data" method="post">
+        <div class="box-body box-body-list">
+            <div class="col-xs-12">
+                <div class="row">
+
+
+                    <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">Single Collapse</a></li>
+                            <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Multiple Collapse</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab_1">
+                                <div class="demo">
+                                    <div class="panel-group" id="accordion" role="tablist">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                                        Know your goals and Prioritize Wisely
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <p>What are your priorities for the day? Make a list of your priorities and plan your day. The tasks of the day must be outlined with the most important and urgent ones on top.</p>
+                                                    <br />
+                                                    <p>Likewise, determine your short-term and long-term goals and evaluate your progress frequently.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                                        Be focused and Eliminate Distractions
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <p>Are you really present physically and mentally. Try to block out all distractions so that you have </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                                        Chose the right mentor to Succeed in career
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <p>There is a big difference between a mentor and a coach</p>
+                                                    <p>Mentoring is a long-term process based on mutual trust and respect. Coaching, on the other hand, is for a short period of time.</p>
+                                                    <p>
+                                                        The topmost priority of a mentor is to help develop skills that are not just relevant for the mentees in their present job, but also for the future.
+                                                        A mentor has the first-hand experience in the industry
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- panel-group -->
+                                </div>
+                            </div>
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="tab_2">
+                                <div class="demo">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="trigger collapsed">
+                                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                                        Collaborate with Colleagues
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                <div class="panel-body">
+                                                    <p>Teach and learn from each other</p>
+                                                    <p>Collaborate on lesson plans-Two minds are better than one.</p>
+                                                    <p>Build your own social network</p>
+                                                    <p>Get feedback regularly</p>
+                                                    <p>Work together to solve problems</p>
+                                                    <p>Become a teacher-leader</p>
+                                                    <p>Adopt a team mentality</p>
+                                                    <p>Ask for help</p>
+                                                    <p>Find a mentor</p>
+                                                    <p>Be open to new ideas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFive">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" class="trigger collapsed">
+                                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                                        Learn Anything Quickly
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    <p>Learn by doing. Always play with the code while learning1.</p>
+                                                    <p>Ask for help. You’ll need it</p>
+                                                    <p>TEACH SOMEONE ELSE</p>
+                                                    <p>FOCUS ON THE 20%</p>
+                                                    <p>Identifying the problem that needs solving</p>
+                                                    <p>Seek out more online resources. There’s a wealth of content</p>
+                                                    <p>Don’t just read the sample code. Tinker with it!</p>
+                                                    <p>Take breaks when debugging</p>
+                                                    <p>Keep Calm and Keep On Coding</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingSix">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="trigger collapsed">
+                                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                                        Reasons People Give Up on Their Goals Too Early
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                                <div class="panel-body">
+                                                    <p>They want the outcome more than they want to obtain a skill</p>
+                                                    <p>They do not have the discipline to stick with their idea long enough to see it live</p>
+                                                    <p>They get distracted by what someone else is doing</p>
+                                                    <p>They don't believe in themselves enough.</p>
+                                                    <p>They fail once--and never try again</p>
+                                                    <p>They don't learn how to discipline themselves</p>
+                                                    <p>They care more about the end result, not the process</p>
+                                                    <p>They surround themselves with people who are a negative influence.</p>
+                                                    <p>They would rather settle for short-term rewards</p>
+                                                    <p>They don't have a guaranteed path to achieve success</p>
+                                                    <p>They don’t have the discipline to work hard enough</p>
+                                                    <p>They become distracted by other aspects of their life</p>
+                                                    <p>They don't know that failure is normal</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingSeven">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" class="trigger collapsed">
+                                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                                        Signs of Settling For Less In Life
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                                <div class="panel-body">
+                                                    <p>You are always tired</p>
+                                                    <p>You keep saying "after"</p>
+                                                    <p>You don’t think you can</p>
+                                                    <p>You think a lot, but do little</p>
+                                                    <p>You are playing small and you think it’s OK</p>
+                                                    <p>WhatsApp, Facebook, and TV are the highlight of your day</p>
+                                                    <p>You are not ready to break comfort</p>
+                                                    <p>You rely on escapism</p>
+                                                    <p>You have the exact same friends</p>
+                                                    <p>You have no idea what you want</p>
+                                                    <p>You don't think you deserve better</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- panel-group -->
+                                </div>
+                            </div>
+                            <!-- /.tab-pane -->
+                        </div>
+                        <!-- /.tab-content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<script type="text/javascript">
+    function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+</script>
+        </div>
+        <footer class="main-footer">
+    
+    <strong>Copyright &copy; 2021
+     <a href="http://www.jalatechnologies.com/"  target="_blank">JALA Technologies</a>.</strong> All rights reserved.
+</footer>
+
+    </div>
+
+
+    <script src="/bundles/bootstrap?v=2Fz3B0iizV2NnnamQFrx-NbYJNTFeBJ2GM05SilbtQU1"></script>
+
+    
+    <script type="text/javascript">
+        var ajaxRequestCount = 0;
+        function AjaxRequestStart() {
+            ajaxRequestCount++,
+            $("#ProgressBar").show();
+        }
+
+        function AjaxRequestFinish() {
+            ajaxRequestCount > 0 && ajaxRequestCount--, ajaxRequestCount == 0 && $("#ProgressBar").hide();
+        }
+    </script>
+</body>
+</html>
